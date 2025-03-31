@@ -3,10 +3,10 @@ kind: Service
 metadata:
   name: takawat-service
   labels:
-    app: myapp 
+    app: goapp 
 spec:
   selector:
-    app: myapp 
+    app: goapp 
 
   ports:
     - port: 8080
