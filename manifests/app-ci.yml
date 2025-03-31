@@ -2,12 +2,12 @@
 
   tasks:
   - name: create docker image
-    command: docker build -t goapp:latest .
+    command: docker build -t takawat/goapp:latest .
     args:
      chdir: /opt/docker
 
   - name: create tag to push image onto dockerhub
-    command: docker tag myapp:latest takawat/goapp:latest
+    command: docker tag takawat/goapp:latest
 
   - name: push docker image
     command: docker push takawat/goapp:latest
