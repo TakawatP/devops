@@ -1,6 +1,6 @@
 # Create Security Group - SSH Traffic and other ports
 resource "aws_security_group" "web-traffic" {
-  name = "Jenkins-sg"
+  name = "Grafana-sg"
 
   dynamic "ingress" {
     for_each = var.ingressrules
@@ -23,6 +23,6 @@ resource "aws_security_group" "web-traffic" {
   }
 
   tags = {
-    "Name" = "Jenkins-sg"
+    "Name" = "Grafana-sg"
   }
 }

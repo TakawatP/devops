@@ -8,9 +8,9 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "project-devops-takawat"
-    key    = "ansible/terraform.tfstate"
-    region = "us-east-1"
+    bucket         = "project-devops-takawat"
+    key            = "grafana/terraform.tfstate"
+    region         = "us-east-1"
 
   }
 }
@@ -18,4 +18,3 @@ terraform {
 provider "aws" {
   region = "us-east-1"
 }
-

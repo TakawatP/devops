@@ -7,7 +7,7 @@
      chdir: /opt/docker
 
   - name: create tag to push image onto dockerhub
-    command: docker tag goapp takawat/goapp:latest
+    command: docker tag takawat/goapp takawat/goapp:latest
 
   - name: push docker image
     command: docker push takawat/goapp:latest

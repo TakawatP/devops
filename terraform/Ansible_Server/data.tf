@@ -1,4 +1,4 @@
-data "aws_ami" "amazonlinux2" {
+data "aws_ami" "amazonlinux2023" {
   most_recent = true
 
   filter {
@@ -8,4 +8,6 @@ data "aws_ami" "amazonlinux2" {
 
   filter {
     name   = "name"
-    values = ["amzn2-ami-hvm-*-x86_64-ebs"]
+    values = ["al2023-ami-2023.6.20250317.2-kernel-6.1-x86_64"]
+  }
+}
