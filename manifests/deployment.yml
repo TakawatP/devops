@@ -6,7 +6,7 @@ metadata:
      app: goapp
 
 spec:
-  replicas: 4
+  replicas: 2
   selector:
     matchLabels:
       app: goapp
@@ -25,5 +25,5 @@ spec:
   strategy:
     type: RollingUpdate
     rollingUpdate:
-      maxSurge: 2
-      maxUnavailable: 2
+      maxSurge: 1
+      maxUnavailable: 1
